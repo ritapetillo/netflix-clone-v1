@@ -1,0 +1,350 @@
+/*-------------GENERAL------------*/
+
+body {
+  font-family: "Kanit", sans-serif;
+  font-weight: 200;
+  margin: 0 auto;
+  background-color: #020202;
+}
+main {
+  width: 95vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+a:link {
+  text-decoration: none;
+}
+
+/*-------------NAVBAR------------*/
+
+.nav-netflix {
+  background-color: #020202;
+}
+div.dropdown-menu.show {
+  right: 0 !important;
+  left: -150% !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: rgb(255 255 255);
+}
+
+.nav__logo {
+  width: 80px;
+  margin-right: 20px;
+}
+
+.navbar-dark .navbar-nav .nav-link i {
+  color: rgb(255 255 255);
+}
+img.nav-avatar {
+  width: 30px;
+}
+.navbar {
+  padding: 0.1em;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+/*-------------MAIN------------*/
+.spinner-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    z-index:111;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.spinner-container2{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    z-index:111;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+/*------------TITLE------------*/
+
+.main__title {
+  padding: 0.5em 1.5em;
+  margin-top: 30px;
+  color: white;
+  width: 100vw;
+  font-weight: 100;
+  font-family: "Noto Sans JP", sans-serif;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.main__title-one {
+  align-items: center;
+}
+
+.main__title h1 {
+  font-weight: 400;
+  font-size: 30px;
+  font-family: "Noto Sans JP", sans-serif;
+  margin-right: 30px;
+}
+
+.main__title-input {
+  margin-left: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  font-size: 14px;
+  font-weight: 400;
+  padding: 5px 10px;
+  border: 1px solid white;
+}
+
+.main__title-input i {
+  margin-left: 20px;
+}
+div.main__title-input.main__title-input-right {
+  padding: 7px 15px;
+}
+
+/*------------IMGS SLIDES------------*/
+#movies-card-display h4{
+  color:white;
+  font-weight: 400;
+  font-size: 30px;
+}
+#movies-card-display .card{
+  color:white;
+  background-color: black;
+}
+#movies-card-display .card .card-body{
+  color:white;
+  display: none;
+  background-color: black;
+}
+#movies-card-display .card:hover ~ div{
+  transform: translate(30px);
+  display:block;
+}
+.movies-card-container {
+  min-height: 120px;
+}
+.movies-card-container h2 {
+  color: var(--main-color-red);
+}
+
+.movies-card-container h4 {
+  margin-top: -10px;
+  color:white;
+}
+.movies-card-container .card {
+  border: 0px;
+}
+
+.movies-card-container  {
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+}
+
+
+#showsCarouse {
+  max-height: 50px;
+}
+.shows__1 {
+  margin-left: 1.2em;
+  margin-bottom: 50px;
+}
+.shows__1 h4 {
+  color: white;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/*------------FOOTER------------*/
+
+footer a {
+  color: rgba(255, 255, 255, 0.349);
+  font-size: 0.5em;
+  padding: 0.5em 0.1em;
+}
+footer a:hover {
+  color: white;
+}
+footer i {
+  margin-right: 15px;
+  color: rgba(255, 255, 255, 0.473);
+  margin-bottom: 15px;
+}
+footer.container {
+  width: 60vw;
+}
+
+.footer__btn {
+  padding: 5px 5px;
+  border: 1px solid rgba(255, 255, 255, 0.473);
+  max-width: 65px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* -----------MODAL PREVIEW--------------*/
+
+#previewMovieModal .modal-content{
+  background-color: black;
+  padding:10px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 500px;
+}
+#previewMovieModal .modal-header{
+  border:0;
+  height: 60%;
+  position: relative;
+}
+#previewMovieModal .modal-body{
+color:white;
+}
+#previewMovieModal .modal-footer{
+  border:0
+}
+#previewMovieModal .close{
+  background-color: black;
+color:white;
+padding:5px 10px;
+border-radius: 100%;
+opacity: 1;
+font-weight: 200;
+}
+
+.modal__header-buttons{
+  position: absolute;
+  bottom:0
+}
+.modal__header-buttons a.modal__header-play {
+background-color: rgba(255, 255, 255);
+border-radius: 5px;
+color:black;
+font-weight: 700;
+padding:10px 30px
+  
+}
+.preview__header{
+background-color:transparent
+}
+.strong{
+  font-weight: 700;
+}
+/*------------TITLE PROFILE------------*/
+.profile {
+  color: rgb(247, 241, 241);
+}
+.title-profile {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+  margin-bottom: 30px;
+}
+
+.title-profile h1 {
+  font-size: 50px;
+}
+
+img.img-fluid.rounded {
+  margin-left: -10%;
+}
+.profile__span-name {
+  background-color: rgb(150, 144, 144);
+  color: white;
+  display: block;
+  font-size: 20px;
+  padding-left: 30px;
+  margin-bottom: 30px;
+}
+button#dropdownMenuButton.btn {
+  padding: 0;
+  border-radius: 0;
+  font-size: 14px;
+  text-align: left;
+  padding: 2px 8px;
+}
+
+.profile__span-maturity {
+  background-color: rgb(150, 144, 144);
+  color: white;
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 5px 30px;
+  margin-bottom: 30px;
+  max-width: fit-content;
+  text-align: center;
+}
+.btn.btn-edit {
+  border: 1px solid rgb(170, 167, 167);
+  border-radius: 0;
+  height: fit-content;
+  padding: 3px 10px;
+  width: 20%;
+  text-transform: uppercase;
+  color: rgb(170, 167, 167);
+  font-size: 14px;
+}
+.btn.btn-bottom {
+  border: 1px solid rgb(170, 167, 167);
+  border-radius: 0;
+  height: fit-content;
+  padding: 3px 20px;
+  width: fit-content;
+  text-transform: uppercase;
+  color: rgb(170, 167, 167);
+  font-size: 20px;
+}
+.input-check {
+  flex-direction: row;
+  align-items: center;
+}
+.input-check span {
+  margin-left: 4px;
+  font-size: 13px;
+}
+
+.bottom-buttons {
+  flex-direction: row;
+  justify-content: stretch;
+  border-top: 1px solid rgba(255, 255, 255, 0.24);
+}
+
+@media screen and (max-width: 990px) {
+  .hidden-mobile {
+    display: none;
+  }
+}
+@media screen and (max-width: 550px) {
+  main {
+    zoom: 0.7;
+  }
+}
+@media screen and (max-width: 400px) {
+  main {
+    zoom: 0.6;
+    margin-left: 10px;
+    min-width: 100vw;
+  }
+  .container {
+    min-width: 450px;
+  }
+  .bottom-buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
